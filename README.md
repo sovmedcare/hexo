@@ -7,9 +7,9 @@ hexo repo for [http://sovmedcare.github.io](http://sovmedcare.github.io)
 git clone https://github.com/sovmedcare/hexo
 sudo npm install
 
-// install theme/next
-cd themes/next
-sudo npm install
+// if need to reinstall theme/next
+// cd themes/next
+// sudo npm install
 ```
 
 ## run on local
