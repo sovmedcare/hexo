@@ -80,3 +80,9 @@ deploy:
   type: git
   repo: https://github.com/sovmedcare/sovmedcare.github.io.git
   branch: master
+
+# BrowserSync
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
