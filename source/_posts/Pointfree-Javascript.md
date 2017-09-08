@@ -49,7 +49,8 @@ const addOneThenSquare = x => square(addOne(x));
 **Pointfree**這種風格剛開始會不太習慣，無法直接看到Function本身的參數，但大部分情況可以通過註解來輔佐
 畢竟**Pointfree**不單只是讓我們的Code更簡潔、語意化
 我們會從原本的「面向對象」(data.id,data.name...)轉而更專注於「處理」的動作(map,reduce,filter)
-這樣會更瞭解整個流程在做什麼，取代原本用取多for-loop,if-else的嵌套
+這樣會更瞭解整個流程在做什麼，取代用許多for-loop,if-else的嵌套
+而且拆成各個「單一職責」的Function也較好做Testing & Debug
 ***
 ## Reference
 [Pointfree編成風格指南 by 阮一峰](http://www.ruanyifeng.com/blog/2017/03/pointfree.html)
