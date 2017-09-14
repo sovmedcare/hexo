@@ -22,9 +22,8 @@ Cycle 更強調 reactive，因此你不會在裡面看到 this 關鍵字，但�
 * ReactJS
 原本 lib 本身其實談不上太多 reactive，因為 reactive 的部分只有 ```render()``` 這個函數，Component 內的其他函數都是 active，因此會看到 this & this.setState 這種東西，反觀 CycleJS 就不會看到 this 這個 JS 一直以來常常會出包的關鍵字，當然在 redux 出來後，以及 rx-react, redux-rx, 甚至 redux-observable 引進後，user input 與 state 改變才開始真正一步步 reactive 化 / stream 化。
 
-
 # 結論
-  
+
 我個人覺得之所以 fb 會大力推動 react 的原因，有一個很大重點在於想要推函數式編程 (functional programming)，但不可能一開始就推個 Haskell 大家都嚇死，等到大家慢慢熟悉這個體系，開始 componenet base programming，寫一段時間後，就會開始寫高階元件 (High Order Component，也就是一個函數會傳進一個 component 再吐一個 component) ，然後又開始學習 render 永遠只根據 prop 改變的 stateless component (pure functional component)。你就會發現你入坑了(你也可以看到 fb 釋出這些想法的進程)，開始感受 FP 的奧妙，原來 component 的各種組成合成，就跟 FP 中的函數合成一樣。
 
 Cycle: 天生全部 reactive，架構上更好更美

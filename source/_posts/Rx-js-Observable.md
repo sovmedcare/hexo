@@ -16,7 +16,7 @@ tags: [RxJs,FRP]
 
 Observable是Rx'Library的核心，它的概念是由兩個Design Pattern融合起來 - *Observer* & *Iterator*
 
-* Observer
+### Observer
 
 其實跟我們平常用到的**addEventListener**概念一樣，註冊一個監聽事件，當觸發時執行**clickHandler**
 
@@ -26,7 +26,7 @@ document.body.addEventListener('click', clickHandler)
 
     當然，一個事件可以有多個Listener，這在後續會解釋
 
-* Iterator
+### Iterator
 
 想像成有一個**指針**指向一個資料序列(ex.Array)，我們想要得到這序列的資料必須透過Iterator的方法 - next()
 當我們呼叫next()後，Iterator才會丟出一筆資料出來
@@ -77,11 +77,11 @@ observable.subscribe({
 有了流&監聽者後，之前也有提到Observable可以像序列一樣處理資料，所以這裡加上Function Programming的核心進去
 
 ``` javascript
-let observable = Rx.Observable
+const observable = Rx.Observable
     .create(observer => {
-        observer.next('S');
-        observer.next('O');
-        observer.next('V');
+        observer.next('S')
+        observer.next('O')
+        observer.next('V')
     })
     .map(str => str + '!')
 // ...subscribe
@@ -93,13 +93,13 @@ let observable = Rx.Observable
 再舉一個例子
 
 ``` javascript
-let observable = Rx.Observable
+const observable = Rx.Observable
     .create(observer => {
-        observer.next('S');
-        observer.next('O');
-        observer.next('V');
+        observer.next('S')
+        observer.next('O')
+        observer.next('V')
     })
-    .scan( (x, y) => x + y )
+    .scan((x, y) => x + y);
 // ...subscribe
 // 'S'
 // 'SO'
@@ -113,6 +113,8 @@ let observable = Rx.Observable
 
 這篇文章只概述了Rx'Library核心，其餘還有很多強大的功能，能幫助我們寫出漂亮的Function Reactive Programming
 有興趣的讀者可以去[RxJS Marbles](http://rxmarbles.com)自己拖拉體驗一下
+
+***
 
 ## Reference
 
