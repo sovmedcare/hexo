@@ -16,7 +16,7 @@ Hot Observable的訂閱者，會讀取同樣的source；Cold Observable則每個
 只有當訂閱者訂閱的時候，Cold Observable才會推送資料，且每個訂閱者都是獨立的流，就像是CD只有當你放進去按播放後才會有音樂
 Observable.interval就是種Cold類型的流
 
-``` javascript
+```javascript
 const source = new Observable.interval(100).take(3)
 ```
 
@@ -45,7 +45,7 @@ Subject可以訂閱也可以被訂閱，他既是Observable也是Observer
 
 ### multicast
 
-``` javascript
+```javascript
 const source = new Observable
                     .interval(300)
                     .take(3)
@@ -54,19 +54,19 @@ const source = new Observable
 
 multicast會回傳可連結(connect)的Observable，要真的執行connect後，Subject才會去訂閱source，且開始推送數據
 
-``` javascript
+```javascript
 const realObserver = source.connect()
 ```
 
 connect會回傳subscription，將此unsubscribe才會真正退掉Observable，將observerA/observerB退訂中間人還是會收到數據流
 
-``` javascript
+```javascript
 realObserver.unsubscribe()
 ```
 
 以下這種寫法可以更簡潔
 
-``` javascript
+```javascript
 const source = new Observable
                     .interval(300)
                     .take(3)
@@ -77,7 +77,7 @@ const source = new Observable
 
 但要多寫一段connect也是很麻煩，我們希望一有人訂閱就開始推送(observers.length > 0)，refCount可幫助我們
 
-``` javascript
+```javascript
 const source = new Observable
                     .interval(300)
                     .take(3)
@@ -89,7 +89,7 @@ const source = new Observable
 
 再給一個簡潔的寫法，refCount + publish
 
-``` javascript
+```javascript
 const source = new Observable
                     .interval(300)
                     .take(3)

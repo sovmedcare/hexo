@@ -20,7 +20,7 @@ Observable是Rx'Library的核心，它的概念是由兩個Design Pattern融合�
 
 其實跟我們平常用到的**addEventListener**概念一樣，註冊一個監聽事件，當觸發時執行**clickHandler**
 
-``` javascript
+```
 document.body.addEventListener('click', clickHandler)
 ```
 
@@ -31,7 +31,7 @@ document.body.addEventListener('click', clickHandler)
 想像成有一個**指針**指向一個資料序列(ex.Array)，我們想要得到這序列的資料必須透過Iterator的方法 - next()
 當我們呼叫next()後，Iterator才會丟出一筆資料出來
 
-``` javascript
+```
 arr = [1,2,3,4] //假設arr是Iterator
 arr.next() // 1
 arr.next() // 2
@@ -45,7 +45,7 @@ arr.next() // 2
 Observer是較會頻繁用到的功能(其餘還有Subject、Schedulers...)，他也是之前比喻的Listener
 我們用實例來講解這些，首先建立一個要觀察的流(Observable)
 
-``` javascript
+```
 let observable = Rx.Observable
     .create(observer => {
         observer.next('S');
@@ -60,7 +60,7 @@ let observable = Rx.Observable
 
 這個observable會依序推送S->O->V給observer，接著我們要有一個Observer來監聽這個流
 
-``` javascript
+```
 observable.subscribe({
     next: (val) => console.log(val),
     error: (err) => console.log(err),
@@ -76,7 +76,7 @@ observable.subscribe({
 
 有了流&監聽者後，之前也有提到Observable可以像序列一樣處理資料，所以這裡加上Function Programming的核心進去
 
-``` javascript
+```
 const observable = Rx.Observable
     .create(observer => {
         observer.next('S')
@@ -92,7 +92,8 @@ const observable = Rx.Observable
 
 再舉一個例子
 
-``` javascript
+```
+javascript
 const observable = Rx.Observable
     .create(observer => {
         observer.next('S')

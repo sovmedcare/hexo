@@ -544,7 +544,7 @@ tabs:
 
 # Motion
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # Transition variants:
