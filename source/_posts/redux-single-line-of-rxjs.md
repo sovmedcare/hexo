@@ -36,3 +36,7 @@ const store$ = initState$.merge(reducer$) // reducer$也是由好幾個reducer$�
 
 Rx'Library真的是項很高效的工具，尤其有諸多語言版本，理解概念&熟悉操作可以用在許多平台上，在我看來是值得投資的
 當然它和redux一樣都實踐了Flux style的管理方式，只是學習成本似乎更高，所以也不用盲目地一概都用RxJs，簡單的專案用redux或許是更高效開發的選擇
+
+# Reference
+
+* [Redux in a single line of code with RxJS](http://rudiyardley.com/redux-single-line-of-code-rxjs/)
