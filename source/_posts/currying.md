@@ -2,6 +2,7 @@
 title: Currying介紹
 date: 2017-10-16 17:45:28
 tags: [FP]
+author: Tancc
 ---
 
 [節錄自wiki](https://en.wikipedia.org/wiki/Currying)

@@ -2,6 +2,7 @@
 title: 使用Immutable.js
 date: 2017-10-17 18:26:55
 tags: [React, FP]
+author: Tancc
 ---
 
 # 解決的問題
