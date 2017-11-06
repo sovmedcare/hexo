@@ -8,7 +8,9 @@
     #}{{ __('title.category') + page_title_suffix }}{#
   #}{% elif page.type === "tags" and not page.title %}{#
     #}{{ __('title.tag') + page_title_suffix }}{#
-  #}{% else %}{#
+  #}{% elif page.type === "authors" %}{#
+    #}{{ __('title.author') + page_title_suffix }}
+  {% else %}{#
     #}{{ page.title + page_title_suffix }}{#
   #}{% endif %}{#
 #}{% endblock %}
@@ -44,6 +46,15 @@
             </div>
             <div class="category-all">
               {{ list_categories() }}
+            </div>
+          </div>
+        {% elif page.type === 'authors' %}
+          <div class="author-all-page">
+            <div class="author-all-title">
+                {{ _p('counter.authors', site.authors.length) }}
+            </div>
+            <div class="author-all">
+              {{ list_authors() }}
             </div>
           </div>
         {% else %}

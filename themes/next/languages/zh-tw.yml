@@ -3,6 +3,7 @@ title:
   category: 分類
   tag: 標籤
   schedule: 日程表
+  author: 作者
 
 author: 博主
 
@@ -16,6 +17,7 @@ menu:
   schedule: 日程表
   sitemap: 站點地圖
   commonweal: 公益404
+  authors: 作者群
 
 sidebar:
   overview: 本站概覽
@@ -64,6 +66,11 @@ counter:
     zero: 暫無文章。
     one: 目前共計 1 篇文章。
     other: "目前共計 %d 篇文章。"
+  
+  authors:
+    zero: 暂无作者
+    one: 目前共计 1 个作者
+    other: "目前共计 %d 个作者"
 
 state:
   posts: 文章
