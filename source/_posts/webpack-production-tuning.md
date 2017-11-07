@@ -2,6 +2,7 @@
 title: Webpack production bundle 優化 (72x)
 date: 2017-09-28 15:43:08
 tags: [webpack, javascript, optimization, production, 優化]
+author: jackypan1989
 ---
 
 本篇將會介紹 webpack 3 中常見的優化方式

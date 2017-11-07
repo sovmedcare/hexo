@@ -2,6 +2,7 @@
 title: webpack upgrade to 16
 date: 2017-09-29 16:43:08
 tags: [react v16, javascript]
+author: jackypan1989
 ---
 
 Facebook just announced the release of React v16.0.

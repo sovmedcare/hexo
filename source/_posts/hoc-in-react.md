@@ -2,7 +2,7 @@
 title: 使用HOC
 date: 2017-10-16 17:45:28
 tags: [React, FP]
-author: Tancc
+author: tancc
 ---
 
 以往當我們要對component進行功能上的擴充時，以前常見的方法如`mixin`、`inheritance`等等，但現在都不推薦使用這些方式了。

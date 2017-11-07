@@ -2,6 +2,7 @@
 title: 漫談 FRP - ReactJS vs CycleJS 
 date: 2017-09-08 15:43:08
 tags: [React, Cycle]
+author: jackypan1989
 ---
 
 2014年，CycleJS 作者 André Staltz 寫了一篇 Don't React ，大力批評 ReactJS 並不 reactive。這篇文章在當時引起軒然大波，雖然在三年後的今天已經被移除，但我們依然可以在 youtube 上面看到古老的戰神影片 [André Medeiros: Don't React (Webbisauna 2014)](https://www.youtube.com/watch?v=9QObt0SGriI)。這三年期間，我們都可以看到兩個 lib 的變化，還有社群推行方向，以下會針對兩個 lib，並討論 FRP (響應風格的函數式編程)。

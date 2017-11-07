@@ -2,6 +2,7 @@
 title: Webpack Migration 從 v1 到 v3 
 date: 2017-09-21 15:43:08
 tags: [webpack, javascript]
+author: jackypan1989
 ---
 
 之前幾個專案都已經直接使用 webpack v2 以上, 但剛好這次手邊有一個專案還在使用 v1, 所以這邊就一起跟大家介紹如何無痛升級到最新版 (v3.6), 包括 loader / plugin 的一些改變，其實大部分都沒變，只有一些關鍵字跟配置調整。

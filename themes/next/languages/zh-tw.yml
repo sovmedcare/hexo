@@ -63,14 +63,14 @@ counter:
     other: "目前共計 %d 個分類"
 
   archive_posts:
-    zero: 暫無文章。
+    zero: 暫無文章
     one: 目前共計 1 篇文章。
     other: "目前共計 %d 篇文章。"
   
   authors:
-    zero: 暂无作者
-    one: 目前共计 1 个作者
-    other: "目前共计 %d 个作者"
+    zero: 暫無作者
+    one: 目前共計 1 位作者
+    other: "目前共計 %d 位作者"
 
 state:
   posts: 文章
