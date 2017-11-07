@@ -1181,9 +1181,9 @@ hexo-generator-archive@^0.1.4:
     hexo-pagination "0.0.2"
     object-assign "^2.0.0"
 
-hexo-generator-author@^0.0.5:
+hexo-generator-author@jackypan1989/hexo-generator-author:
   version "0.0.5"
-  resolved "https://registry.yarnpkg.com/hexo-generator-author/-/hexo-generator-author-0.0.5.tgz#a540d1a3c4fd66eeb499c5af2cba1d5396c86228"
+  resolved "https://codeload.github.com/jackypan1989/hexo-generator-author/tar.gz/2bb02703486cce5507a561152458a2d0e1edfbaf"
   dependencies:
     hexo-pagination "0.0.2"
 
