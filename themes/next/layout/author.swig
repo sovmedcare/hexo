@@ -6,19 +6,21 @@
  
 {% block content %}
  
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        {{ page.author }}
-        <small>{{  __('title.author')  }}</small>
-      </h2>
-    </div>
- 
-    {% for post in page.posts %}
-      {{ post_template.render(post) }}
-    {% endfor %}
-  </section>
- 
+  <div class="post-block archive">
+    <section id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h2 >
+          {{ page.author }}
+          <small>{{  __('title.author')  }}</small>
+        </h2>
+      </div>
+  
+      {% for post in page.posts %}
+        {{ post_template.render(post) }}
+      {% endfor %}
+    </section>
+  </div>
+
   {% include '_partials/pagination.swig' %}
  
 {% endblock %}
