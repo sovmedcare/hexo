@@ -2,6 +2,7 @@
 title: 5個RxJs有趣範例
 date: 2017-09-15 11:24:30
 tags: [FRP, RxJS]
+author: Tu-Szu-Chi
 ---
 之前提到過RxJs，這篇文章主要是從Rx'Library官方的練習題挑出5個來介紹，都蠻好理解的
 有興趣的朋友也可以直接[試試看](http://reactivex.io/learnrx/)，run起來對了才能解鎖下一題，挺有趣的

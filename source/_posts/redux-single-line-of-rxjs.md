@@ -2,6 +2,7 @@
 title: RxJs實現Redux功能
 date: 2017-09-21 11:47:06
 tags: [RxJS]
+author: Tu-Szu-Chi
 ---
 
 **Redux**的出現是為了解決數據的管理方式，而RxJS是更進階地解決異步*(Async)*操作的困擾

@@ -2,6 +2,7 @@
 title: React LifeCycle
 date: 2017-09-04 15:43:08
 tags: [React]
+author: Tu-Szu-Chi
 ---
 ![React LifeCycle](https://imgur.com/3JSxD1b.png)
 圖為React主要的**生命週期**LifeCycle流程，以下內容將針對各週期的觸發時機以及使用場合做解說

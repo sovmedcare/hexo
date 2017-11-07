@@ -2,6 +2,7 @@
 title: Pointfree Javascript
 date: 2017-09-08 10:46:00
 tags: [FRP]
+author: Tu-Szu-Chi
 ---
 截自[Haskell wiki](https://wiki.haskell.org/Pointfree)
 >**Pointfree Style**

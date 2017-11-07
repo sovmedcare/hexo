@@ -2,6 +2,7 @@
 title: 什麼是 High Order Component
 date: 2017-09-06 09:39:43
 tags: [React,FRP]
+author: Tu-Szu-Chi
 ---
 ``` haskell
 hoc :: ReactComponent -> ReactComponent

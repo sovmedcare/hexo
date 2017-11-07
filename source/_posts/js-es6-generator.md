@@ -2,6 +2,7 @@
 title: Javascript ES6 Generator 介紹
 date: 2017-09-27 17:42:49
 tags: [javascript]
+author: Tu-Szu-Chi
 ---
 在ES6中，Promise將我們從「**Callback Hell**」稍微解放出來
 

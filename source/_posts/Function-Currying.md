@@ -2,6 +2,7 @@
 title: Function Currying
 date: 2017-09-08 13:48:30
 tags: [FRP]
+author: Tu-Szu-Chi
 ---
 ![Haskell Curry](https://camo.githubusercontent.com/b51957f9615c4df77574d0bb393ac6fbce50acd7/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6c7961682f63757272792e706e67 "Haskell Curry (Google Image)")
 函數「柯里化」這單看字面上意思真的猜不出想表達什麼，因為Curry一詞其實是取自人名

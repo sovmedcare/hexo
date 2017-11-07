@@ -2,6 +2,7 @@
 title: React PureComponent and Performance
 date: 2017-10-12 10:04:16
 tags: [React, javascript]
+author: Tu-Szu-Chi
 ---
 
 React在15.3.0新增了`PureComponent`的類別，我們基本上可以直接無痛從`extends Component`轉到`extends PureComponent`
