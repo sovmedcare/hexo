@@ -1,7 +1,7 @@
 ---
 title: RxJs Observable - HOT & COLD
 date: 2017-09-13 12:15:25
-tags: [RxJS,FRP]
+tags: [RxJS,FP]
 author: Tu-Szu-Chi
 ---
 ![Observable Hot & Cold](https://image.slidesharecdn.com/untitled-150216041015-conversion-gate02/95/reactive-programming-with-rx-22-638.jpg?cb=1424081878 "截自Google Image")

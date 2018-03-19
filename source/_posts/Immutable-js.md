@@ -1,7 +1,7 @@
 ---
 title: Immutable.js 簡介
 date: 2017-09-08 15:15:02
-tags: [FRP,React]
+tags: [FP,React]
 author: Tu-Szu-Chi
 ---
 Javascript中的對象是可變的(Mutable)

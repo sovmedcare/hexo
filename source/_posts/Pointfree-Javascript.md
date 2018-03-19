@@ -1,7 +1,7 @@
 ---
 title: Pointfree Javascript
 date: 2017-09-08 10:46:00
-tags: [FRP]
+tags: [FP]
 author: Tu-Szu-Chi
 ---
 截自[Haskell wiki](https://wiki.haskell.org/Pointfree)

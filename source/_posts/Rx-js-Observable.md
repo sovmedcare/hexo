@@ -1,7 +1,7 @@
 ---
 title: RxJs Observable 介紹
 date: 2017-09-13 10:32:21
-tags: [RxJS,FRP]
+tags: [RxJS,FP]
 author: Tu-Szu-Chi
 ---
 ![Everthing is stream](https://cdn-images-1.medium.com/max/1600/1*j-SOtxql-Sqmvj0i0TWqMg.jpeg "截自Medium")
