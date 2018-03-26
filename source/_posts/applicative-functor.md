@@ -142,9 +142,9 @@ liftA2 (+) (Just 1) (Just 2)
 而`liftA` `liftA2` `lift3`的差別只在其所要lift的函數的參數個數而已
 
 
-此外，使用`<$>..<*>..<*>`，在閱讀上或許對一部分人來說比較不直覺的。如`f <$> expr1 <*> expr2 <*> expr3`，執行順序並不是由左往右的。
+此外，在閱讀或撰寫上，使用`<$>..<*>..<*>`或許對部分人來說比較不直覺的。
 
-這部分可以使用ApplicativeDo，使得可以跟以往使用do notationu那般由上到下的書寫方式
+這部分可以使用ApplicativeDo，使得可以跟以往使用do notation那般由上到下的書寫方式
 ```haskell
 {-# LANGUAGE ApplicativeDo #-}
 
@@ -154,7 +154,7 @@ run = do
  z <- expr1
  return (f x y z)
 ```
-因為expre並不會相互依賴，因此會被轉換成`f <$> expr1 <*> expr2 <*> expr3`，其實就還是一樣的東西。
+因為expression並不會相互依賴，因此會被轉換成`f <$> expr1 <*> expr2 <*> expr3`，其實就還是一樣的東西。
 
 ---
 
