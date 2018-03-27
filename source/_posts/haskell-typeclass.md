@@ -1,6 +1,6 @@
 ---
 title: Haskell 系列 - typeclass (類型類)
-date: 2018-3-23 18:26:55
+date: 2018-3-27 18:26:55
 tags: [FP, Haskell, type, typeclass]
 category: 
 author: jackypan1989
