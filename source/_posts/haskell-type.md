@@ -1,6 +1,6 @@
 ---
 title: Haskell 系列 - type (類型)
-date: 2018-3-22 18:26:55
+date: 2018-3-27 18:26:55
 tags: [FP, Haskell, type]
 category: 
 author: jackypan1989
