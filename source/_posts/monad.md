@@ -1,7 +1,7 @@
 ---
 title: Monad
 date: 2018-03-27 16:29:04
-tags: [haskell]
+tags: [Haskell]
 author: tancc
 ---
 
