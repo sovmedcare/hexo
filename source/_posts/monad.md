@@ -1,6 +1,6 @@
 ---
 title: Monad
-date: 2018-03-27 16:29:04
+date: 2018-03-28 17:39:04
 tags: [Haskell]
 author: tancc
 ---
@@ -21,6 +21,8 @@ fmap :: (a -> b) -> f a -> f b
 
 他們做的事情其實都是 function application，只是應用的情境不同而已。而從工程面來看，Monad 其實也是一樣的，也為我們做了某情境下的函數調用的抽象。
 
+---
+
 # 1 Monad TypeClass
 
 Monad typeClass 的部分定義如下
@@ -36,6 +38,8 @@ class Applicative m => Monad m where
 
 `>>=`(bind)，是使用monad進行操作時十分常看到的東西。
 從他的 type signature 不難發現，他要做的事也是 function application，只是這次要應用的函數是`(a -> m b)`，而這函數會所 return 的值是將 input 包上一個額外的結構`m`，而最終`>>=`所返回值`m b`會跟輸入`m a`是具有相同結構的。
+
+---
 
 # 2 Monad laws
 如同`Applicative Functor`，就算一個型別實作了`>>=`成為了 Monad 的instance了，也還不能夠說是一個`Monad`。
