@@ -23,7 +23,7 @@ fmap :: (a -> b) -> f a -> f b
 
 ---
 
-# 1 Monad TypeClass
+# Monad TypeClass
 
 Monad typeClass 的部分定義如下
 ```haskell
@@ -41,7 +41,7 @@ class Applicative m => Monad m where
 
 ---
 
-# 2 Monad laws
+# Monad laws
 如同`Applicative Functor`，就算一個型別實作了`>>=`成為了 Monad 的instance了，也還不能夠說是一個`Monad`。
 
 必須還要在滿足三個 Monad laws
@@ -57,7 +57,7 @@ return x >>= f  = f x
 
 ---
 
-# 3 Maybe Monad
+# Maybe Monad
 
 當在做除法運算的時候，會不希望除數為 0，否則後續運算可能會出現非預期的結果，因此定義了一個`safeDivide`
 ```haskell
@@ -108,7 +108,7 @@ safeDivide >>= maybeFunc1 >>= maybeFunc2...
 
 ---
 
-# 4 List Monad
+# List Monad
 
 首先看一下如何定義 List Monad 內容
 ```haskell
@@ -148,7 +148,7 @@ a >>= f
 
 ---
 
-# 5 Do notation
+# Do notation
 
 如果只用`>>=`的話有可能會發生程式碼巢狀結構太深的問題
 ```haskell
@@ -168,10 +168,10 @@ do
 
 ---
 
-# 6 Type signature
+# Type signature
 這段希望能從type signature來得到一些操作上的直覺
 
-### Function Application
+## Function Application
 
 從 TypeClass 知道，若一個東西是 Monad，那他必然是 Applicative 亦即也必然是 Functor。
 
@@ -186,7 +186,7 @@ flip . >>= :: (a -> m b) -> m a -> m b
 
 三者從 type signature 來比較，更有一開始所說的，都是將 function application 做不同應用情境的抽象。
 
-### Dependent computation
+## Dependent computation
 
 同樣從`>>=`的型別去看
 ```haskell
@@ -198,7 +198,7 @@ flip . >>= :: (a -> m b) -> m a -> m b
 
 而這種相依關係也是 Monad 較靈活的原因之一，因為它可以根據函數返回的值再去後續的運算。而這是 Applicative 無法做到的，`<*>`所串接的函數彼此是不相依的。
 
-### General concatenation
+## General concatenation
 
 如果都是去 lift 普通函數並且 apply 到有額外結構的值中，如`f a`, `m a`，那麼用 fmap 就行了。
 但如果這個函數`a -> m b`，是返回一個有 monadic structure 的值時，使用fmap會發生什麼事情呢？
@@ -230,7 +230,7 @@ m >>= f = join $ fmap f m
 
 ---
 
-# 7 結語
+# 結語
 
 `Monoid`, `Funtor`, `Applicative`, `Monad` ... 這些 typeclass，都代表著某些行為的抽象。
 
