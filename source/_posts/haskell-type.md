@@ -1,6 +1,6 @@
 ---
 title: Haskell 系列 - type (類型)
-date: 2018-3-22 18:26:55
+date: 2018-3-23 18:26:55
 tags: [FP, Haskell, type]
 category: 
 author: jackypan1989
@@ -80,12 +80,14 @@ Maybe :: * -> *
 
 # 注意事項
 
-### 1. data constructor 產生出來的是值/data, 可以傳入 function, 但 type 不能傳入 function (Data constructors as first class values)
+## 1. data constructor 產生出來的是值/data, 可以傳入 function, 但 type 不能傳入 function (Data constructors as first class values)
+
 例如 f 是某個 function
 則 f (True) 或是 f (Just 2) 都合法
 但 f (Maybe) 就不合法了
 
-### 2. data constructor 不是 type (Data constructors are not types)
+## 2. data constructor 不是 type (Data constructors are not types)
+
 例如我們定義一個
 ```haskell
 data MyMaybe a = Just a | Nothing
@@ -122,5 +124,6 @@ RGB :: Int -> Int -> Int -> Color
 ```
 
 # 參考資料
+
 1. haskell wiki
 2. learn you a haskell
