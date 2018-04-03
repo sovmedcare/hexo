@@ -98,7 +98,7 @@ instance Monad (Reader r) where
     Reader $ \r -> runReader (aRb (ra r)) r
 ```
 
-可以看到這裡的 structure 是 `Reader r` 也就是 `(->) r` (function type) 這部分。因此 `r` 在運行過程中不會被改變，因此可以確保能拿到一樣的共用資料 `r`。
+可以看到這裡的 structure 是 `Reader r` 也就是 `(->) r` (function type) 這部分。而且在實作當中可以看到，`r`是保持著原來的值被傳遞，並沒有被做其他transform，因此可以確保 Reader monad 可以拿到相同的`r`
 
 對照 `(->) r` 在[原始碼](https://hackage.haskell.org/package/base-4.11.0.0/docs/src/GHC.Base.html#line-794)中定義的`Functor` `Applicative` `Monad` instance，可以發現基本上是一樣的，只是多了 `Reader` 這一層包裝。
 
