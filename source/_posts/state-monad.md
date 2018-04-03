@@ -2,7 +2,7 @@
 title: state_monad
 date: 2018-04-02 15:28:10
 tags: [Haskell]
-author: tan
+author: tancc
 ---
 
 許多的程式應用情境，是要依賴隨著時間或是運算而不停變換的狀態而進行。Haskell 中沒有變數，數值都是不可變的。

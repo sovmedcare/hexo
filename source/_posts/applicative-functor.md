@@ -2,7 +2,7 @@
 title: Applicative Functor
 date: 2018-03-21 15:03:23
 tags: [haskell]
-author: Haskell
+author: tancc
 ---
 
 # 1 Applicative TypeClass

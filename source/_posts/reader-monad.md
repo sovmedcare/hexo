@@ -2,7 +2,7 @@
 title: Reader monad
 date: 2018-03-30 14:54:11
 tags: [Haskell]
-author: tan
+author: tancc
 ---
 
 程式中時常有許多函數是需要去使用共用的常數(shared environment)，常見的像是設定檔(config)之類的東西。
