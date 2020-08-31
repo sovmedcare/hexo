@@ -91,7 +91,7 @@ author: dannnyliang
 
 <br />
 
-# 狀況 2 - 多區塊滾動
+# 練習 II - 多區塊滾動
 除了 Fixed Header 以外，另一個要會的版型是「多區塊滾動」  
 **上下:** 在前面的練習的 `Header` 中加入 `overflow: scroll` 就可以直接達成，上下區塊各自滾動的效果  
 **左右:** 也就是常見的 SideMenu，從這個 **[範例](https://codesandbox.io/s/before-independent-scroll-xb6pu)** 開始試著實作吧！
